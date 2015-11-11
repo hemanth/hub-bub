@@ -1,7 +1,7 @@
 {
   "name": "hubbub",
   "short_name": "Search a sorted list of github notifications.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "manifest_version": 2,
   "description": "Search a sorted list of github notifications.",
   "homepage_url": "http://h3manth.com",
