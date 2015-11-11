@@ -1,0 +1,30 @@
+{
+  "name": "hubbub",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Search a sorted list of github notifications.",
+  "homepage_url": "http://h3manth.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "permissions": [
+    "https://github.com/notifications",
+    "https://github.com/notifications/participating"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/notifications",
+        "https://github.com/notifications?all=1",
+        "https://github.com/notifications/participating"
+      ],
+      "js": [
+        "js/jquery/jquery.min.js",
+        "src/inject/inject.js"
+      ]
+    }
+  ]
+}
